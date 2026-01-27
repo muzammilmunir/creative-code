@@ -1,9 +1,29 @@
-<html>
-    <body>
-        <h1>Hello, Muzammil</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-        <script>
-            
-        </script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Code</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="600"></canvas>
+
+    <script>
+        let canvas = document.querySelector('canvas')
+        let context = canvas.getContext('2d')
+
+        context.fillRect(100, 100, 400, 400)
+    </script>
+</body>
+
 </html>
