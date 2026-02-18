@@ -71,8 +71,14 @@ const sketch = ({ context, width, height }) => {
       context.fillStyle = `rgb(${r},${g}, ${b})`;
 
       context.save();
-      context.translate(x,y);
-      context.fillRect(0,0,cell,cell);
+      context.translate(x, y);
+      context.translate(cell * 0.5, cell * 0.5)
+      // context.fillRect(0,0,cell,cell);
+
+      context.beginPath();
+      context.arc(0, 0, cell * 0.5, 0, Math.PI * 2);
+      context.fill();
+
       context.restore();
     }
 
